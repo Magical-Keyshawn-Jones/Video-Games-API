@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const gameModel = require('./videoGameServer/model')
 const gameMiddleware = require('./videoGameServer/middleware')
 
@@ -6,8 +7,7 @@ const server = express()
 const PORT = process.env.PORT || 9000
 
 server.use(express.json())
-
-// server.use('/api/server', server)
+server.use(cors())
 
 server.get('/', (req, res) => {
     res.send('Welcome to My Video Game Server!')
