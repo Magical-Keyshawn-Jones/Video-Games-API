@@ -4,7 +4,7 @@ exports.up = function(knex) {
         table.varchar('Game').notNullable().default('God of War')
         table.integer('Rating').notNullable().default(10)
         table.text('Platform', 20).notNullable().default('Playstation 5')
-        table.varchar('comment', 150)
+        table.varchar('Comment', 150)
     })
 };
 
