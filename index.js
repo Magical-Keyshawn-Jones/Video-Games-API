@@ -89,5 +89,11 @@ server.use((err, req, res, next) => {
 })
 
 server.listen(PORT, () => {
+    const game = ''
+    // if (game === null) {console.log(true)} else {console.log(false)} //True
+    // if (game === '') {console.log(true)} else {console.log(false)} //True
+    // if (!game) {console.log(true)} else {console.log(false)} //True
+    // if (game === undefined) {console.log(true)} else {console.log(false)} //False
+    
     console.log(`Server running on port ${PORT}`)
 })
